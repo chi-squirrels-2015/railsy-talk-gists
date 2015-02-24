@@ -10,4 +10,4 @@ Be sure to add a link to this README using the following syntax, but please crea
 - [form_tag helpers](https://github.com/chi-squirrels-2015/railsy-talk-gists/blob/form-tag-helper/form-tag-helpers.md)
 - [link_to](https://github.com/chi-squirrels-2015/railsy-talk-gists/blob/master/link_to.md)
 
-- [form_tag](https://github.com/chi-squirrels-2015/railsy-talk-gists/blob/aamharris_form_for/form_for.md)
+- [form_for](https://github.com/chi-squirrels-2015/railsy-talk-gists/blob/aamharris_form_for/form_for.md)
