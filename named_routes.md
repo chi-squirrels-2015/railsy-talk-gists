@@ -66,11 +66,11 @@ Sweet, let's see what that looks!
 | login | GET | /login  | sessions#new  | display the page for login |
 |  | POST | /login  | sessions#create  | create a session for the logged in user |
 | logout | DELETE | /logout | sessions#destroy | deletes the current session | 
-| _pictures_ | GET | /photos  | photos#index  | display a list of all photos  |
-| _new_picture_ | GET | /photos/new  | photos#new  | return an HTML form for creating a new photo  |
+| *pictures* | GET | /photos  | photos#index  | display a list of all photos  |
+| *new_picture* | GET | /photos/new  | photos#new  | return an HTML form for creating a new photo  |
 | | POST | /photos  | photos#create  | create a new photo  |
 | | GET | /photos/:id  | photos#show  | display a specific photo  |
-| _edit_pictures_ | GET | /photos/:id/edit  | photos#edit  | return an HTML form for editing a photo  |
+| *edit_pictures* | GET | /photos/:id/edit  | photos#edit  | return an HTML form for editing a photo  |
 | | PATCH/PUT | /photos/:id  | photos#update  | update a specifc photo  |
 | | DELETE | /photos/:id  | photos#destroy  | delete a specific photo  |
 
@@ -92,7 +92,7 @@ Guess on what it's going to do?
 | signup | GET | /signup  | users#new  | display the page for signup |
 | login | GET | /login  | sessions#new  | display the page for login |
 |  | POST | /login  | sessions#create  | create a session for the logged in user |
-| _signout_ | DELETE | /logout | sessions#destroy | deletes the current session | 
+| *signout* | DELETE | /logout | sessions#destroy | deletes the current session | 
 | pictures | GET | /photos  | photos#index  | display a list of all photos  |
 | new_picture | GET | /photos/new  | photos#new  | return an HTML form for creating a new photo  |
 | | POST | /photos  | photos#create  | create a new photo  |
