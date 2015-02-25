@@ -18,6 +18,8 @@ resources :photos
 
 Awesome, looks really similar to the routes that we are all familiar with so far. But hold on, we also have a sessions_controller.rb and a users_controller.rb which will deal with signup, login, and logout. So in our routes, we will also have this:
 
+#### Warning: You will need to do `resources: users` in order for the all the functionality to work
+
 ```ruby
 get    'signup', to: 'users#new' 
 get    'login',  to: 'sessions#new'
@@ -31,9 +33,9 @@ Now we are going to have something that looks like this:
 
 | Prefix | HTTP Verb  | Path | Controller#Action | Used for |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| user | GET | /signup  | users#new  |  |
-| login | GET | /login  | sessions#new  |  |
-|  | POST | /login  | sessions#create  |  |
+| signup | GET | /signup  | users#new  | display the page for signup |
+| login | GET | /login  | sessions#new  | display the page for login |
+|  | POST | /login  | sessions#create  | create a session for the logged in user |
 | logout | DELETE | /logout | sessions#destroy | | 
 | photos | GET | /photos  | photos#index  | display a list of all photos  |
 | new_photo | GET | /photos/new  | photos#new  | return an HTML form for creating a new photo  |
@@ -60,9 +62,9 @@ Sweet, let's see what that looks!
 
 | Prefix | HTTP Verb  | Path | Controller#Action | Used for |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| user | GET | /signup  | users#new  |  |
-| login | GET | /login  | sessions#new  |  |
-|  | POST | /login  | sessions#create  |  |
+| signup | GET | /signup  | users#new  | display the page for signup |
+| login | GET | /login  | sessions#new  | display the page for login |
+|  | POST | /login  | sessions#create  | create a session for the logged in user |
 | logout | DELETE | /logout | sessions#destroy | | 
 | pictures | GET | /photos  | photos#index  | display a list of all photos  |
 | new_picture | GET | /photos/new  | photos#new  | return an HTML form for creating a new photo  |
@@ -87,9 +89,9 @@ Guess on what it's going to do?
 
 | Prefix | HTTP Verb  | Path | Controller#Action | Used for |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| user | GET | /signup  | users#new  |  |
-| login | GET | /login  | sessions#new  |  |
-|  | POST | /login  | sessions#create  |  |
+| signup | GET | /signup  | users#new  | display the page for signup |
+| login | GET | /login  | sessions#new  | display the page for login |
+|  | POST | /login  | sessions#create  | create a session for the logged in user |
 | signout | DELETE | /logout | sessions#destroy | | 
 | pictures | GET | /photos  | photos#index  | display a list of all photos  |
 | new_picture | GET | /photos/new  | photos#new  | return an HTML form for creating a new photo  |
