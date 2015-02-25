@@ -18,7 +18,8 @@ resources :photos
 
 Awesome, looks really similar to the routes that we are all familiar with so far. But hold on, we also have a sessions_controller.rb and a users_controller.rb which will deal with signup, login, and logout. So in our routes, we will also have this:
 
-#### Warning: You will need to do `resources: users` in order for the all the functionality to work
+#### Warning: You will need to do `resources :users` in order for the all the functionality to work for signup, login, and logout
+(I just forgot to do it here)
 
 ```ruby
 get    'signup', to: 'users#new' 
@@ -70,7 +71,7 @@ Sweet, let's see what that looks!
 | **new_picture** | GET | /photos/new  | photos#new  | return an HTML form for creating a new photo  |
 | | POST | /photos  | photos#create  | create a new photo  |
 | | GET | /photos/:id  | photos#show  | display a specific photo  |
-| **edit_pictures** | GET | /photos/:id/edit  | photos#edit  | return an HTML form for editing a photo  |
+| **edit_picture** | GET | /photos/:id/edit  | photos#edit  | return an HTML form for editing a photo  |
 | | PATCH/PUT | /photos/:id  | photos#update  | update a specifc photo  |
 | | DELETE | /photos/:id  | photos#destroy  | delete a specific photo  |
 
@@ -97,7 +98,7 @@ Guess on what it's going to do?
 | new_picture | GET | /photos/new  | photos#new  | return an HTML form for creating a new photo  |
 | | POST | /photos  | photos#create  | create a new photo  |
 | | GET | /photos/:id  | photos#show  | display a specific photo  |
-| edit_pictures | GET | /photos/:id/edit  | photos#edit  | return an HTML form for editing a photo  |
+| edit_picture | GET | /photos/:id/edit  | photos#edit  | return an HTML form for editing a photo  |
 | | PATCH/PUT | /photos/:id  | photos#update  | update a specifc photo  |
 | | DELETE | /photos/:id  | photos#destroy  | delete a specific photo  |
 
