@@ -36,7 +36,7 @@ Now we are going to have something that looks like this:
 | signup | GET | /signup  | users#new  | display the page for signup |
 | login | GET | /login  | sessions#new  | display the page for login |
 |  | POST | /login  | sessions#create  | create a session for the logged in user |
-| logout | DELETE | /logout | sessions#destroy | | 
+| logout | DELETE | /logout | sessions#destroy | deletes the current session | 
 | photos | GET | /photos  | photos#index  | display a list of all photos  |
 | new_photo | GET | /photos/new  | photos#new  | return an HTML form for creating a new photo  |
 | | POST | /photos  | photos#create  | create a new photo  |
@@ -65,7 +65,7 @@ Sweet, let's see what that looks!
 | signup | GET | /signup  | users#new  | display the page for signup |
 | login | GET | /login  | sessions#new  | display the page for login |
 |  | POST | /login  | sessions#create  | create a session for the logged in user |
-| logout | DELETE | /logout | sessions#destroy | | 
+| logout | DELETE | /logout | sessions#destroy | deletes the current session | 
 | pictures | GET | /photos  | photos#index  | display a list of all photos  |
 | new_picture | GET | /photos/new  | photos#new  | return an HTML form for creating a new photo  |
 | | POST | /photos  | photos#create  | create a new photo  |
@@ -92,7 +92,7 @@ Guess on what it's going to do?
 | signup | GET | /signup  | users#new  | display the page for signup |
 | login | GET | /login  | sessions#new  | display the page for login |
 |  | POST | /login  | sessions#create  | create a session for the logged in user |
-| signout | DELETE | /logout | sessions#destroy | | 
+| logout | DELETE | /logout | sessions#destroy | deletes the current session | 
 | pictures | GET | /photos  | photos#index  | display a list of all photos  |
 | new_picture | GET | /photos/new  | photos#new  | return an HTML form for creating a new photo  |
 | | POST | /photos  | photos#create  | create a new photo  |
