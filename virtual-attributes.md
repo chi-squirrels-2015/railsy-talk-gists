@@ -80,10 +80,15 @@ Take our past blog challenge in Phase 2. Say you want to create a form for your 
 
 2) When user enters input, we can write custom setter method for tags in the blog model.
 
-```
+```ruby
 class Blog < ActiveRecord::Base
 
-  def tags=(tags)
+
+  def tags_as_strings
+    self.tags.pluck(name).join(",")
+  end
+  
+  def tags_array=(tags)
     @blog = Blog.new
     tags = params[:tags].split(",")
     tags.each do |tag_data|
@@ -97,5 +102,5 @@ class Blog < ActiveRecord::Base
 This might be what your create route looks like inside your blogs controller:
 
 ```ruby
-Blog.create(title: params[:title], tags: params[:password])
+Blog.create(title: params[:title], tags: params[:tags])
 ```  
