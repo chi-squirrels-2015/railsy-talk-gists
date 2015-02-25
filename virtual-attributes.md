@@ -68,7 +68,7 @@ end
 ```
 This is what you might find in the create route that this form is set to.
 ```ruby
-User.create(fullname: params[:fullname], password: params[:password])  
+User.create(full_name: params[:full_name], password: params[:password])  
 ```        
 Take our past blog challenge in Phase 2. Say you want to create a form for your blog entry that would allow a user to create tags and associate them with this blog. What would you do?
 
