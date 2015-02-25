@@ -69,4 +69,33 @@ end
 This is what you might find in the create route that this form is set to.
 ```ruby
 User.create(fullname: params[:fullname], password: params[:password])  
-```                                           
+```        
+Take our past blog challenge in Phase 2. Say you want to create a form for your blog entry that would allow a user to create tags and associate them with this blog. What would you do?
+
+1) Give user a text field to enter tags, separated by commas
+
+```ruby
+<%=text_field_tag :tags%> 
+```
+
+2) When user enters input, we can write custom setter method for tags in the blog model.
+
+```
+class Blog < ActiveRecord::Base
+
+  def tags=(tags)
+    @blog = Blog.new
+    tags = params[:tags].split(",")
+    tags.each do |tag_data|
+      tag = Tag.create(word:tag_data)
+      @blog.tags << tag
+    end
+  end
+
+```
+
+This might be what your create route looks like inside your blogs controller:
+
+```ruby
+Blog.create(title: params[:title], tags: params[:password])
+```  
