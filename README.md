@@ -9,6 +9,7 @@ Be sure to add a link to this README using the following syntax, but please crea
 
 - [form_tag helpers](https://github.com/chi-squirrels-2015/railsy-talk-gists/blob/form-tag-helper/form-tag-helpers.md)
 - [link_to](https://github.com/chi-squirrels-2015/railsy-talk-gists/blob/master/link_to.md)
+- [virtual_attributes](https://github.com/chi-squirrels-2015/railsy-talk-gists/blob/virtual-attributes/virtual-attributes.md)
 
 - [Coffee Script](https://gist.github.com/ianagne/2f985ce725371b7c766a#file-coffe-script-talk-md)
 - [Devise](https://gist.github.com/gabivoicu/1ae336fb43f09d5302b7)
