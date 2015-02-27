@@ -41,7 +41,7 @@ Now we are going to have something that looks like this:
 | photos | GET | /photos  | photos#index  | display a list of all photos  |
 | new_photo | GET | /photos/new  | photos#new  | return an HTML form for creating a new photo  |
 | | POST | /photos  | photos#create  | create a new photo  |
-| | GET | /photos/:id  | photos#show  | display a specific photo  |
+| photo | GET | /photos/:id  | photos#show  | display a specific photo  |
 | edit_photo | GET | /photos/:id/edit  | photos#edit  | return an HTML form for editing a photo  |
 | | PATCH/PUT | /photos/:id  | photos#update  | update a specifc photo  |
 | | DELETE | /photos/:id  | photos#destroy  | delete a specific photo  |
@@ -70,7 +70,7 @@ Sweet, let's see what that looks!
 | **pictures** | GET | /photos  | photos#index  | display a list of all photos  |
 | **new_picture** | GET | /photos/new  | photos#new  | return an HTML form for creating a new photo  |
 | | POST | /photos  | photos#create  | create a new photo  |
-| | GET | /photos/:id  | photos#show  | display a specific photo  |
+| **picture** | GET | /photos/:id  | photos#show  | display a specific photo  |
 | **edit_picture** | GET | /photos/:id/edit  | photos#edit  | return an HTML form for editing a photo  |
 | | PATCH/PUT | /photos/:id  | photos#update  | update a specifc photo  |
 | | DELETE | /photos/:id  | photos#destroy  | delete a specific photo  |
@@ -97,7 +97,7 @@ Guess on what it's going to do?
 | pictures | GET | /photos  | photos#index  | display a list of all photos  |
 | new_picture | GET | /photos/new  | photos#new  | return an HTML form for creating a new photo  |
 | | POST | /photos  | photos#create  | create a new photo  |
-| | GET | /photos/:id  | photos#show  | display a specific photo  |
+| picture | GET | /photos/:id  | photos#show  | display a specific photo  |
 | edit_picture | GET | /photos/:id/edit  | photos#edit  | return an HTML form for editing a photo  |
 | | PATCH/PUT | /photos/:id  | photos#update  | update a specifc photo  |
 | | DELETE | /photos/:id  | photos#destroy  | delete a specific photo  |
