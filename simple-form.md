@@ -3,19 +3,19 @@ SimpleForm takes those nasty forms we have been writing and *simplifies* them.
 
 ### Basic Setup
 
-##### Add it to your Gemfile:
+Add it to your Gemfile:
 
 `gem 'simple_form'`
 
-##### Run the following command to install it:
+Run the following command to install it:
 
 `bundle install`
 
-##### Run the generator:
+Run the generator:
 
 `rails generate simple_form:install`
 
-##### If using Bootstrap, run this generator instead:
+If using Bootstrap, run this generator instead:
 
 `rails generate simple_form:install --bootstrap`
 
