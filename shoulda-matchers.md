@@ -9,7 +9,7 @@ group :test do
 end
 ```
 
-Then requirethe gem following rspec-rails in your rails_helper/ spec_helper
+Then require the gem following rspec-rails in your rails_helper/ spec_helper
 ```ruby
 require 'rspec/rails'
 require 'shoulda/matchers'
