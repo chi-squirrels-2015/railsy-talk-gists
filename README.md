@@ -17,3 +17,4 @@ Be sure to add a link to this README using the following syntax, but please crea
 - [Additions in Rails 4](http://railscasts.com/episodes/400-what-s-new-in-rails-4?view=asciicast)
 - [Shoulda Matchers](https://github.com/chi-squirrels-2015/railsy-talk-gists/blob/elliottayoung-shoulda-matchers/shoulda-matchers.md)
 - [SimpleForm](https://github.com/chi-squirrels-2015/railsy-talk-gists/blob/master/simple-form.md)
+
