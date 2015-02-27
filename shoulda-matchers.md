@@ -19,23 +19,23 @@ require 'shoulda/matchers'
 ##Shamelessly Stolen, Useful Links
 ### ActiveModel Matchers
 
-* **[allow_mass_assignment_of](lib/shoulda/matchers/active_model/allow_mass_assignment_of_matcher.rb)**
+* **[allow_mass_assignment_of](https://github.com/thoughtbot/shoulda-matchers/lib/shoulda/matchers/active_model/allow_mass_assignment_of_matcher.rb)**
   tests usage of Rails 3's `attr_accessible` and `attr_protected` macros.
-* **[allow_value](lib/shoulda/matchers/active_model/allow_value_matcher.rb)**
+* **[allow_value](https://github.com/thoughtbot/shoulda-matchers/lib/shoulda/matchers/active_model/allow_value_matcher.rb)**
   tests usage of the `validates_format_of` validation.
-* **[have_secure_password](lib/shoulda/matchers/active_model/have_secure_password_matcher.rb)**
+* **[have_secure_password](https://github.com/thoughtbot/shoulda-matchers/lib/shoulda/matchers/active_model/have_secure_password_matcher.rb)**
   tests usage of `has_secure_password`.
-* **[validate_confirmation_of](lib/shoulda/matchers/active_model/validate_confirmation_of_matcher.rb)**
+* **[validate_confirmation_of](https://github.com/thoughtbot/shoulda-matchers/lib/shoulda/matchers/active_model/validate_confirmation_of_matcher.rb)**
   tests usage of `validates_confirmation_of`.
-* **[validate_exclusion_of](lib/shoulda/matchers/active_model/validate_exclusion_of_matcher.rb)**
+* **[validate_exclusion_of](https://github.com/thoughtbot/shoulda-matchers/lib/shoulda/matchers/active_model/validate_exclusion_of_matcher.rb)**
   tests usage of `validates_exclusion_of`.
-* **[validate_inclusion_of](lib/shoulda/matchers/active_model/validate_inclusion_of_matcher.rb)**
+* **[validate_inclusion_of](https://github.com/thoughtbot/shoulda-matchers/lib/shoulda/matchers/active_model/validate_inclusion_of_matcher.rb)**
   tests usage of `validates_inclusion_of`.
-* **[validate_length_of](lib/shoulda/matchers/active_model/validate_length_of_matcher.rb)**
+* **[validate_length_of](https://github.com/thoughtbot/shoulda-matchers/lib/shoulda/matchers/active_model/validate_length_of_matcher.rb)**
   tests usage of `validates_length_of`.
-* **[validate_numericality_of](lib/shoulda/matchers/active_model/validate_numericality_of_matcher.rb)**
+* **[validate_numericality_of](https://github.com/thoughtbot/shoulda-matchers/lib/shoulda/matchers/active_model/validate_numericality_of_matcher.rb)**
   tests usage of `validates_numericality_of`.
-* **[validate_presence_of](lib/shoulda/matchers/active_model/validate_presence_of_matcher.rb)**
+* **[validate_presence_of](https://github.com/thoughtbot/shoulda-matchers/lib/shoulda/matchers/active_model/validate_presence_of_matcher.rb)**
   tests usage of `validates_presence_of`.
 
 ### ActiveRecord Matchers
